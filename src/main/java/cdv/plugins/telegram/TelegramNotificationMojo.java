@@ -13,16 +13,16 @@ import javax.ws.rs.core.MediaType;
  * @author Dmitry Coolga
  *         19.11.2016 16:35
  */
-@Mojo(name = "send-message", threadSafe = true, requiresOnline = true)
+@Mojo(name = "send-message", threadSafe = true, requiresOnline = true, aggregator = true)
 public class TelegramNotificationMojo extends AbstractMojo {
 
-    @Parameter(required = true)
+    @Parameter(property = "bot.token", required = true)
     private String botToken;
 
-    @Parameter(required = true)
+    @Parameter(property = "chat.id", required = true)
     private String chatId;
 
-    @Parameter(required = true)
+    @Parameter(property = "text", required = true)
     private String text;
 
     public void execute() {
