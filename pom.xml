@@ -7,7 +7,7 @@
 
     <groupId>cdv.plugins</groupId>
     <artifactId>telegram-maven-plugin</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>maven-plugin</packaging>
 
     <name>Maven plugin for notifications via Telegram messenger</name>
